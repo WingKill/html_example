@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        id만 사용한 게 문제점. 같은 부분을 중복하여 사용할 땐 class를 사용한다. id는 유일값 
+        재사용을 한다고 가정할 때 상당히 불편한 코드로 보인다. 
+        div로 묶지 않은 부분이 분명 있다.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header, #content, #footer{
+            clear:both;
+            width:1006px;
+            overflow: hidden;
+        }
+
+        #content{
+            height: 302px;
+        }
+
+        #left,#center,#right{
+            float: left;
+            background-color: #f3f3f3;
+            border: 1px solid #cccccc;
+        }
+
+        #left, #right{
+            width: 150px;
+            height: 150px;
+        }
+
+        #center{
+            width: 700px;
+            height: 150px;
+        }
+
+        #header #left,#footer #right{           
+            border-radius: 30px 0 30px 0;
+        }
+
+        #header #center{
+            border-radius: 0 0 30px 30px;
+        }
+
+        #header #right,#footer #left{
+            border-radius: 0 30px 0 30px;
+        }
+
+        #content #left,#content #center,#content #right{
+            height: 300px;
+        }
+
+        #content #left{
+            border-radius: 0 30px 30px 0;
+        }
+
+        #content #center{
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        #content #right{
+            border-radius: 30px 0 0 30px;
+        }
+
+        #footer #center{
+            border-radius: 30px 30px 0 0;
+        }
+
+        div li{
+            text-align: center;
+            padding: 15px;
+            width: 19%;
+            list-style: none;
+            float:left;
+            font-weight: bold;
+        }
+
+        div li > a{
+            text-align: center;
+            color: black;
+            text-decoration-line: none;
+        }
+
+        div li > a:hover{
+            color: red;
+        }
+
+        div h1{
+            padding-top: 15px;
+            padding-left: 15px;
+            clear:both;
+        }
+
+        div p{
+            padding-left: 15px;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="left"></div>
+        <div id="center"></div>
+        <div id="right"></div>
+    </div>
+    <div id="content">
+        <div id="left"></div>
+        <div id="center">
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+            </ul>
+            <h1>하이서울브랜드</h1>
+            <p>서울시와 서울산업진흥원(SBA)이 공동으로 지원하는 하이 서울브랜드 사업은 우수한 기술력과 상품력을 보유하고 있으나 
+               고유 브랜드 육성에 어려움을 겪고 있는 우수기업들이 서울시가 인정한 중소기업 공동브랜드인 하이서울브랜드를 활용하여 
+               제품 경쟁력을 강화할 수 있도록 각종 홍보 마케팅을 지원하는 사업입니다.</p>
+        </div>
+        <div id="right"></div>
+    </div>
+    <div id="footer">
+        <div id="left"></div>
+        <div id="center"></div>
+        <div id="right"></div>
+    </div>
+</body>
+</html>
