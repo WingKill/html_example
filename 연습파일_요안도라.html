@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            width: 967px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #header{
+            margin-top: 5%;
+            width : 967px;
+        }
+
+        .header_bg {
+            width: 967px;
+            height: 284px;
+            background-image: url(https://github.com/WingKill/html_example/blob/main/bg2.png?raw=true);
+            background-size: cover;
+        }
+
+        .header_bg .img_text{        
+            display: flex;
+            align-items: end; 
+            justify-content: center;
+            flex-direction: column;
+            height: 283px;
+        }
+
+        .img_text .text1{
+            margin-right: 20px;
+            color: beige;
+        }
+
+        .img_text .text2{
+            margin-right: 20px;
+            color: #cfcf3b;
+        }
+
+        .header_menu{
+            width: 967px;
+            height: 50px;
+            background-color: rgb(80, 14, 14);
+            margin: 0;
+        }
+
+        .header_menu ul{
+            margin: 0;
+        }
+
+        .header_menu ul li{
+            margin : 15px 30px;
+            list-style: none;
+            color: white;
+            display: inline-block;
+        }
+
+        .header_menu ul li:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id=header>
+            <div class="header_bg">
+                <div class="img_text">
+                    <h1 class="text1">Joandora</h1>
+                    <h2 class="text2">가장 제주다운 수산리집</h2>
+                </div>                
+            </div>
+            <div class="header_menu">
+                <ul>
+                    <li>이용 안내</li>
+                    <li>객실 안내</li>
+                    <li>예약 안내</li>
+                    <li>예약하기</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
