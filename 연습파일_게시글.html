@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width : 1020px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #cccccc;
+            background-color: antiquewhite;
+        }
+
+        .header{
+            margin: 10px;
+            width:1000px;
+            height: 150px;
+            line-height: 150px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+            background-color : white;
+        }
+
+        h1{
+            margin: 0;
+        }
+
+        .header h1{
+            height: 150px;
+            line-height: 150px;
+            font-size: 1em;
+        }
+
+        .navigation{
+            margin: 10px;
+            width:1000px;
+            height: 150px;
+            line-height: 150px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+            background-color : white;
+        }
+
+        .navigation h1{
+            margin: 0%;
+            height: 90px;
+            line-height: 90px;
+            font-size: 1em;
+        }
+
+        .navigation ul{
+            margin: -65px;  
+            padding: 0;          
+        }
+
+        .navigation ul li{
+            margin : 0;
+            border: 1px solid #cccccc;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navigation li a, .navigation li a:visited{
+            width: 150px;
+            height: 40px;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navigation li a:hover{
+            width: 150px;
+            height: 40px;
+            display: inline-block;
+            height: 40px;
+            color: orange;
+            background-color: aquamarine;
+        }
+
+        .navigation li a:focus{
+            width: 150px;
+            height: 40px;
+            display: inline-block;
+            height: 40px;
+            background-color: forestgreen;
+            color: magenta;
+        }
+
+        .all_content{
+            margin: 10px;
+            width:1000px;
+            height:400px;
+            line-height:100px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box; 
+            position: relative;
+            background-color : white;
+        }
+
+        .all_content .content{
+            width: 790px;
+            height: 380px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box; 
+            position: absolute;
+            left: 10px;
+            top:10px;
+            background-color : azure;
+        }
+
+        .content h1{
+            margin: 0%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1em;
+        }
+
+        .all_content .banner{
+            width: 180px;
+            height: 380px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box; 
+            position: absolute;
+            left: 810px;
+            top:10px;
+            background-color : azure;
+        }
+
+        .banner h1{
+            margin: 0%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1em;
+        }
+
+        .footer{
+            margin: 10px;
+            width:1000px;
+            height:150px;
+            line-height:150px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+            background-color : white;
+        }
+
+        .footer h1{
+            height: 150px;
+            line-height: 150px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h1>HEADER</h1>
+        </div>
+        <div class="navigation">
+            <h1>NAVIGATION</h1>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+        </div>
+        <div class="all_content">
+            <div class="content">
+                <h1>CONTENT</h1>
+            </div>
+            <div class="banner">
+                <h1>BANNER</h1>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>FOOTER</h1>
+        </div>
+    </div>
+</body>
+</html>
