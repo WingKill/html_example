@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 미디어 쿼리는 시도도 못한 파일 */
+        body{
+            background-color: rgb(1, 40, 148);
+        }
+
+        #wrapper{
+            text-align: center;
+            width: 90%;
+            margin-top: 2%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .post{
+            width: 550px;
+            height: 210px;
+            float: left;
+            overflow: hidden;
+            border: 1px solid #cccccc;
+            margin: 5px;
+        }
+           
+        .post img{
+            width: 301px;
+            height: 210px;
+            float: left;
+            border-right: 1px solid #cccccc;
+        }
+
+        .post .text{
+            font-size: 0.9em;
+            width: 248px;
+            height: 210px;
+            line-height: 200px;
+            float: right;
+            background-color: aliceblue;
+            overflow: hidden;
+        }
+        
+        .text p{
+            box-sizing: border-box;
+            padding: 15px;
+            width: 100%;
+            height: 105px;
+            line-height: 3;
+            margin: 0;
+            font-weight: bold;            
+        }
+
+        .text p:nth-child(1){
+            font-size: 1.5em;
+            float: left;
+        }
+
+        .text p:nth-child(2){
+            font-size: 1em;
+            float: left;
+        }
+
+        @media screen and (min-width:341px) and (max-width:1889px){
+            body{
+                background-color: rgb(26, 148, 1);
+            }
+
+            #wrapper{
+                text-align: center;
+                width: 580px;
+                margin-top: 2%;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width:340px){
+            body{
+                background-color: rgb(148, 67, 1);
+            }
+
+            #wrapper{
+                text-align: center;
+                width: 330px;
+                margin-top: 2%;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+
+            .post{
+                width: 302px;
+                height: 420px;
+                float: left;
+                border: 1px solid #cccccc;
+                background-color: aliceblue;
+                margin: 5px;
+            }
+            .post img{
+                width: 301px;
+                height: 210px;
+                border-right: 1px solid #cccccc;
+            }
+            .post .text{
+                font-size: 0.9em;
+                width: 301px;
+                height: 210px;
+                line-height: 200px;
+                overflow: hidden;
+            }
+
+            .text p:nth-child(1){
+                font-size: 1.5em;
+            }
+
+            .text p:nth-child(2){
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="post">
+            <img src="imgs3\1.jpg" alt="">
+            <div class="text">
+                <p>일분 전만큼 먼 시간은 없다.</p>
+                <p>- Jim Bishop</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="imgs3\2.jpg" alt="">
+            <div class="text">
+                <p>웃음은 마음의 조깅이다.</p>
+                <p>- Norman Cousins</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="imgs3\3.jpg" alt="">
+            <div class="text">
+                <p>낡은 옷을 그냥 입고 새 책을 사라.</p>
+                <p>- Austin Phelps</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
