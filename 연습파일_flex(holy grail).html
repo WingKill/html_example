@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            color: rgba(240, 248, 255, 0.849);
+        }
+
+        header {
+            width: 100%;
+            height: 15vh;
+            background-color: blue;
+            line-height: 15vh;
+        }
+
+        .contents {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            padding: 5px;
+        }
+
+        .contents div {
+            width: 25%;
+            line-height: 30vh;
+            margin: 5px;
+            background-color: palevioletred;
+        }
+
+        .contents .main-content {
+            flex: 2;
+            background-color: greenyellow;
+        }
+
+        footer {
+            height: 15vh;
+            line-height: 15vh;
+            background-color: aqua;
+        }
+
+        @media screen and (max-width:700px) {
+            .container {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                text-align: center;
+                color: rgba(240, 248, 255, 0.849);
+            }
+
+            header {
+                width: 100%;
+                height: 10vh;
+                background-color: blue;
+                line-height: 10vh;
+            }
+
+            .contents {
+                width: 100%;
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+
+            .contents div {
+                width: 100%;
+                line-height: 13vh;
+                margin: 5px;
+                background-color: palevioletred;
+            }
+
+            .contents .subnav, .contents .sidebar{
+                flex: 1;
+            }
+
+            .contents .main-content {
+                flex: 2;
+                background-color: greenyellow;
+            }
+
+            footer {
+                height: 10vh;
+                line-height: 10vh;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>HEADER</header>
+        <div class="contents">
+            <div class="subnav">SUBNAV</div>
+            <div class="main-content">MAIN CONTENT</div>
+            <div class="sidebar">SIDEBAR</div>
+        </div>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>
